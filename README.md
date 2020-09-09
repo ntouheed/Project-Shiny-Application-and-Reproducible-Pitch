@@ -29,4 +29,4 @@ https://nasirtouheed.shinyapps.io/PricePredictorForDiamonds/
 
 Click the Below Link for the Rpubs presentation.
 
-http://rpubs.com/ntouheed/338599
+https://rpubs.com/ntouheed/658285
