@@ -1,0 +1,41 @@
+Course Project: Shiny Application and Reproducible Pitch
+========================================================
+author: Nasir Touheed
+date: September 8 2020
+autosize: true
+
+King County housing price Analysis Report
+========================================================
+- King County is a county located in US State of Washington
+- It has a population around 2,200,000 in the 2018 census estimate
+- It is also the 86th county with the highest income in 2011
+- King County provides housing area with notable main features
+- These features affects the housing unit prices
+- We will consider only four features upon which the predicted price of house will depend:
+--   Floors  - Waterfront  - Condition   - Living Area
+
+King County Housing Data
+========================================================
+In this application we will predict the housing unit's price according to the main features mentioned above using a Linear Regression model. The dataset is gathered from the Kaggle Database: https://www.kaggle.com/harlfoxem/housesalesprediction
+```{r,eval = TRUE,echo=TRUE}
+houseDf<-read.csv("kc_house_data.csv")
+houseDf<-houseDf[,c(3,6,8,9,11)]; head(houseDf,2)
+```
+Appliaction
+========================================================================
+Click the Below Link for the Application.
+
+https://nasirtouheed.shinyapps.io/projectfinal/
+
+Click the link below for compiled project files on gitub repo.
+
+https://github.com/BenKarmay/Peer-graded-Assignment-Course-Project-Shiny-Application-and-Reproducible-Pitch
+
+Limitation and Discussion
+======================================================
+
+- The data set which has 21613 rows is biased towrds those houses which have no water front
+- Imperical evidenc proves this: 21450 rows with waterfront value 0 and only 163 rows with value 1
+- Only one observation with 1 = floors = waterfront = condition, so prediction is 100% accurate
+- No output from the algorithm with 1 = waterfront = condition and floors > 1
+
